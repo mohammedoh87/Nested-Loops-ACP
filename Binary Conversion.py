@@ -1,4 +1,8 @@
-dec_num = int(input("Enter a Decimal Number: "))
-bin_dec = bin(dec_num)
-print("Binary: ",bin_dec[2:])    
+number = int(input("Enter a number: "))
+result = ''
+while number != 0:
+    remainder = number % 2  # gives the exact remainder
+    number = number // 2
+    result = str(remainder) + result
+print("The binary format is: ", result)    
 
